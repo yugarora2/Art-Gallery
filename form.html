@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Review Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h2 class="logo">Art Gallery</h2>
+        <ul>
+          <li><a href="htmlProject.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="form.html">Ratings</a></li>
+        </ul>
+      </nav>
+
+  <h1 style="text-align:center;">User Review</h1>
+
+  <form id="reviewForm" style="width: 400px; padding:40px; margin: auto; border: 2px solid red">
+    <label>Name:</label><br><br>
+    <input type="text" id="name" required><br><br>
+    <label>Phone Number:</label><br><br>
+    <input type="number" id="number" required><br><br>
+    <label>Which state did you like the most?</label><br>
+        <input type="checkbox"  name="fav" value="Assam"> Assam 
+        <input type="checkbox" name="fav" value="Gujarat"> Gujarat 
+        <input type="checkbox" name="fav" value="Madhya Pradesh"> Madhya Pradesh 
+        <input type="checkbox" name="fav" value="Maharashtra"> Maharashtra 
+        <input type="checkbox" name="fav" value="Rajasthan"> Rajasthan 
+        <input type="checkbox" name="fav" value="Uttarakhand"> Uttarakhand 
+        <input type="checkbox" name="fav" value="Tamil Nadu"> Tamil Nadu 
+        <input type="checkbox" name="fav" value="Bihar"> Bihar 
+        <input type="checkbox" name="fav" value="Jammu and Kashmir"> Jammu and Kashmir 
+        <input type="checkbox" name="fav" value="Karnataka"> Karnataka 
+        <input type="checkbox" name="fav" value="Uttar Pradesh"> Uttar Pradesh <br><br>
+    <label>Give Marks (out of 10):</label><br>
+    <input type="number" id="marks" max="10" min="1" required><br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <p><h4>Your favorite arts are from the state: </h4></p>
+  <p id="para">
+  </p>
+  <script>
+
+document.getElementById("reviewForm").addEventListener("submit", function(e) {
+  e.preventDefault(); 
+    var x=document.getElementById("name");
+  alert("Mr."+x.value+"\n Your response has been submitted. Thank you!");
+    var p=document.getElementById("para");
+    var sel=document.getElementsByName("fav");
+    var list="";
+    for(var i=0;i<sel.length;i++){
+        if(sel[i].checked){
+            list+=sel[i].value +" ,";
+        }
+    }
+    p.innerHTML="MUST VISIT: "+list;
+  document.getElementById("reviewForm").reset();
+});
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Indian Art Gallery</title>
+        <link rel="stylesheet" href="styleS.css">
+    </head>
+    <body>
+        <div class="title" 
+        style="  text-align: center;
+        padding: 30px 20px;
+        background: url('assamm.jpg') no-repeat center;
+        height: 150px; 
+        display: flex;
+        justify-content: center;
+        align-items: center; "> <!-- /*perfectly aligns the element horiz and verti in parent container*/-->
+            <h1>ASSAM</h1>
+        </div>
+        <nav>
+        <h2 class="logo">Art Gallery</h2>
+        <ul>
+          <li><a href="htmlProject.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="form.html">Ratings</a></li>
+        </ul>
+      </nav>
+      <style>
+        .gallery {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          margin: 50px;
+        }
+        
+        .art-card {
+          width: 260px;
+          background: #fff8e7; /* light beige card */
+          padding: 15px;
+          border-radius: 12px;
+          box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+          text-align: center;
+          transition: 0.3s;
+        }
+        
+        .art-card img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+        
+        .art-card p {
+          margin-top: 10px;
+          font-weight: bold;
+          color: black;
+        }
+        
+        .art-card:hover {
+          transform: scale(1.05);
+          background: #ffe4b5; /* slight color change on hover */
+        }
+        </style>
+        
+        <div class="gallery">
+        
+       
+          <div class="art-card">
+            <a href="assam1.html">
+              <img src="assam1.jpg" alt="Rongali Bihu">
+            </a>
+            <p>Rongali Bihu</p>
+          </div>
+ 
+          <div class="art-card">
+            <a href="assam2.html">
+              <img src="assam2.jpg" alt="Village Landscape">
+            </a>
+            <p>Assam Village Landscape</p>
+          </div>
+
+          <div class="art-card">
+            <a href="assam3.html">
+              <img src="assam3.jpg" alt="Kamakhya Temple">
+            </a>
+            <p>Kamakhya Temple</p>
+          </div>
+        
+        </div>
+      </body>
+      </html>
