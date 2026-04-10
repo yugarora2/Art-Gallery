@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Indian Art Gallery</title>
+        <link rel="stylesheet" href="styleS.css">
+    </head>
+    <style>
+      .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 50px;
+      }
+  
+      .art-card {
+        width: 260px;
+        background: #fff8e7;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        text-align: center;
+        transition: 0.3s;
+      }
+  
+      .art-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+  
+      .art-card p {
+        margin-top: 10px;
+        font-weight: bold;
+        color: black;
+      }
+  
+      .art-card:hover {
+        transform: scale(1.05);
+        background: #ffe4b5;
+      }
+      </style>
+  
+    <body>
+        <div class="title" 
+        style="  
+        padding: 30px 20px;
+        background: url('MP.jpg') no-repeat center;
+        height: 150px; 
+        display: flex;
+        justify-content: center;
+        align-items: center; "> <!-- /*perfectly aligns the element horiz and verti in parent container*/-->
+            <h1 style="font-size: 50px;">MADHYA PRADESH</h1>
+        </div>
+        <nav>
+        <h2 class="logo">Art Gallery</h2>
+        <ul>
+          <li><a href="htmlProject.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="form.html">Ratings</a></li>
+        </ul>
+      </nav>
+
+        <div class="gallery">
+    
+          <!-- 1 -->
+          <div class="art-card">
+            <a href="mp1.html">
+              <img src="mp1.jpg" alt="Gond Art">
+            </a>
+            <p>Gond Art</p>
+          </div>
+    
+          <!-- 2 -->
+          <div class="art-card">
+            <a href="mp2.html">
+              <img src="mp2.jpg" alt="Bhimbetka Rock Art">
+            </a>
+            <p>Bhimbetka Rock Art</p>
+          </div>
+    
+          <!-- 3 -->
+          <div class="art-card">
+            <a href="mp3.html">
+              <img src="mp3.jpg" alt="Tribal Art">
+            </a>
+            <p>Tribal Art</p>
+          </div>
+    
+        </div>
+    
+      </body>
+      </html>
