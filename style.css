@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(128, 27, 27);
+    color:gold;
+      margin:0;
+      padding:0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 1% 40px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  nav ul li a:hover {
+    color: orange;
+  }
+  
+  /* 🔹 HERO */
+  .title {
+    text-align: center;
+    padding: 3% 40px;
+    background: linear-gradient(to right,navy,maroon);
+    
+  }
+  
+  .title h1 {
+    font-size: 46px;
+    -webkit-text-stroke: 1px red;
+    color:gold;
+  }
+  .map-section{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+  }
+
+  /* 🔹 FOOTER */
+ 
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top:auto;
+}
+
+/*form buttons*/
+input, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+/*pagenation*/
+button {
+  background: orange;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkorange;
+}
+
+/*form para*/
+#para {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+
+  background: #fff3cd;
+  border: 2px solid #ffa500;
+  border-radius: 10px;
+
+  width: 80%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
